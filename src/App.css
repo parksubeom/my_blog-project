@@ -5,13 +5,14 @@
 }
 
 :root {
-  --maincolor : #EFFFFD
-  --sidebarcolor : #B8FFF9
-  --content-color : #85F4FF
-  --itemcolor1 : #42C2FF
-  --itemcolor2 : #98ACF8
-  --itemcolor3 : #B088F9
-  --itemcolor4 : #DA9FF9
+  --backgroundcolor :#d2e1f8 ;
+  --maincolor : #e1edff;
+  --sidebarcolor : #e8f0fd;
+  --content-color : #5e8eff;
+  --itemcolor1 : #EFFFFD ;
+  --itemcolor2 : #8ba2ee;
+  --itemcolor3 : #B088F9;
+  --itemcolor4 : #DA9FF9;
 }
 
 .App {
@@ -19,41 +20,50 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border:5px solid #ccc;
+  background-color: var(--backgroundcolor);
   width: 100vw;
   height: 100vh;
 }
 
 .Main {
+  background-color: var(--maincolor);
   display: flex;
   flex-direction: row;
-  border:2px solid red;
   border-radius: 20px;
   width: 70%;
   height: 70%;
   padding: 20px;
+  box-shadow: 2px 2px 20px var(--itemcolor2);
 }
 
 .Main>* {
-  border:2px solid  green;
   border-radius: 20px;
 }
 .sidebar {
+  background-color: var(--sidebarcolor);
   margin-right: 10px;
   width: 300px;
   height: 100%;
+  box-shadow: 0px 0px 10px var(--itemcolor2);
 }
 
 .content {
  width: 100%;
  height: 100%;
- padding: 20px;
 }
 
 .Form__container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
   border-radius: 20px;
   width: 100%;
   height: 60px;
-  border: 2px solid red;
+  background-color: var(--sidebarcolor);
+  box-shadow: 0px 0px 10px var(--itemcolor2);
 }
 
+.search_form {
+  margin-left: 20px;
+ 
+}

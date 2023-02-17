@@ -1,38 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --maincolor : #EFFFFD
+  --sidebarcolor : #B8FFF9
+  --content-color : #85F4FF
+  --itemcolor1 : #42C2FF
+  --itemcolor2 : #98ACF8
+  --itemcolor3 : #B088F9
+  --itemcolor4 : #DA9FF9
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border:5px solid #ccc;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.Main {
+  display: flex;
+  flex-direction: row;
+  border:2px solid red;
+  border-radius: 20px;
+  width: 70%;
+  height: 70%;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Main>* {
+  border:2px solid  green;
+  border-radius: 20px;
 }
+.sidebar {
+  margin-right: 10px;
+  width: 300px;
+  height: 100%;
+}
+
+.content {
+ width: 100%;
+ height: 100%;
+ padding: 20px;
+}
+
+.Form__container {
+  border-radius: 20px;
+  width: 100%;
+  height: 60px;
+  border: 2px solid red;
+}
+
